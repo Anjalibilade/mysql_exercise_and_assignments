@@ -1,0 +1,217 @@
+****30 examples of databses with tables****
+
+1. E-commerce Database.....
+E-commerce (product,categories,customers,order,payment)
+Products(Product_ID, Product_Name, Description, Price, StockQuantity, Category_ID)
+Categories( Category_ID, Category_Name)
+Customers (Customer_ID, FirstName, LastName, Email, Phone, Address)
+Orders( Order_ID, Customer_ID, OrderDate, TotalAmount, PaymentStatus)
+Payments (Payment_ID, Order_ID, Payment_Date, Amount, PaymentMethod)
+
+2. Library Management System.....
+Books(Book_ID, Title, Author_ID, Publisher, Genre, PublicationYear)
+Authors(Author_ID, FirstName, LastName, Country)
+Members(Member_ID, Name, Email, PhoneNumber, Address, JoinDate)
+Transactions(Transaction_ID, Member_ID, Book_ID, IssueDate, ReturnDate)
+Categories (Category_ID, CategoryName)
+
+3. Healthcare Management System....
+Patients( Patient_ID, FirstName, LastName, DOB, Gender, Phone, Address)
+Doctors( Doctor_ID, FirstName, LastName, Specialization, Phone, Email)
+Appointments( Appointment_ID, Patient_ID, Doctor_ID, Appointment_Date, Status)
+Treatments( Treatment_ID, Patient_ID, Doctor_ID, TreatmentDate, Description)
+MedicalHistory(History_ID, Patient_ID, Condition, StartDate, EndDate, Status)
+
+4. University Database............
+Students(Student_ID, FirstName, LastName, DOB, Email, Phone)
+Professors( Professor_ID, FirstName, LastName, Department_ID, Email)
+Courses( course_ID, CourseName, Credits, Instructor_ID, Department_ID)
+Enrollments(Enrollment_ID, Student_ID, Course_ID, EnrollmentDate, Grade)
+Departments( Department_ID, DepartmentName, Location)
+
+5. Retail Store Database....
+Products( Product_ID, ProductName, Category_ID, Price, StockQuantity)
+Customers( Customer_ID, FirstName, LastName, Email, Phone)
+Orders( Order_ID, Customer_ID, OrderDate, TotalAmount, OrderStatus)
+Stock (Stock_ID, Product_ID, Quantity, ReorderLevel)
+Suppliers(Supplier_ID, SupplierName, Phone, Email)
+
+6. Banking System.....
+Customers(Customer_ID, FirstName, LastName, DOB, Address, Email)
+Accounts(Account_ID, Customer_ID, AccountType, Balance, DateOpened)
+Transactions(Transaction_ID, Account_ID, TransactionDate, Amount, TransactionType)
+Loans( Loan_ID, Customer_ID, LoanAmount, InterestRate, StartDate, EndDate)
+Branches(Branch_ID, BranchName, Location)
+
+7. Hotel Management System.....
+Rooms( Room_ID, RoomType, Price, AvailableStatus, Floor)
+Customers(Customer_ID, FirstName, LastName, Phone, Email, Address)
+Reservations( Reservation_ID, Customer_ID, Room_ID, CheckInDate, CheckOutDate)
+Payments( Payment_ID, Reservation_ID, PaymentDate, Amount, PaymentMethod)
+Staff( Staff_ID, FirstName, LastName, Position, Salary, Phone)
+
+8. Employee Management System.......
+Employees(Employee_ID, FirstName, LastName, DOB, Email, Department_ID)
+Departments( Department_ID, DepartmentName)
+Salaries( Salary_ID, Employee_ID, SalaryAmount, StartDate, EndDate)
+Attendance( Attendance_ID, Employee_ID, Date, Status)
+Projects( Project_ID, ProjectName, StartDate, EndDate, Budget)
+
+9. Social Media Database.....
+Users(User_ID, Username, Email, Password, DateOfBirth)
+Posts( Post_ID, User_ID, Content, PostDate)
+Comments(Comment_ID, Post_ID, User_ID, Content, CommentDate)
+Likes(Like_ID, Post_ID, User_ID, LikeDate)
+Followers( Follower_ID, User_ID, FollowerUser_ID)
+
+10. Movie Database.........
+Movies( Movie_ID, Title, Director_ID, ReleaseDate, Genre, Duration)
+Actors(Actor_ID, FirstName, LastName, DOB)
+Directors( Director_ID, FirstName, LastName, Country)
+Genres:(Genre_ID, GenreName)
+Reviews( Review_ID, Movie_ID, ReviewerName, Rating, ReviewDate)
+
+11. Inventory Management System....
+Products(Product_ID, ProductName, Category_ID, Price, QuantityInStock)
+Suppliers(Supplier_ID, SupplierName, ContactName, Phone, Email)
+Purchases( Purchase_ID, Product_ID, Supplier_ID, Quantity, Purchase_Date, Price)
+Sales(Sale_ID, Product_ID, Customer_ID, Quantity, SaleDate, Amount)
+Categories(Category_ID, CategoryName)
+
+12. Event Management System....
+Events( Event_ID, Event_Name, Event_Date, VenueI_D, Organizer_ID)
+Organizers( Organizer_ID, OrganizerName, Phone, Email)
+Guests(Guest_ID, FirstName, LastName, Phone, Email)
+Tickets( Ticket_ID, Event_ID, Guest_ID, TicketType, Price)
+Venues( Venue_ID, VenueName, Location, Capacity)
+
+13. Customer Relationship Management (CRM) System....
+Customers(customer_id,customer _Name, Email, Phone, Address)
+Contacts(Contact_ID, Customer_ID, ContactName, ContactPhone, ContactEmail)
+Sales( Sale_ID, Customer_ID, SalesRep_ID, SaleDate, Amount)
+Deals(Deal_ID, Customer_ID, DealAmount, DealStatus, DealClosingDate)
+SupportTickets(Ticket_ID, Customer_ID, TicketDate, Status, Priority)
+
+14. Real Estate Database....
+Properties( Property_ID, Address, Price, Type, SquareFootage, Agent_ID)
+Agents( Agent_ID, FirstName, LastName, Phone, Email)
+Buyers( Buyer_ID, FirstName, LastName, Phone, Email)
+Sales(Sale_ID, Property_ID, Buyer_ID, Agent_ID, SalePrice, SaleDate)
+Locations(Location_ID, City, State, ZipCode)
+
+15. Online Forum Database....
+Users( User_ID, Username, Email, Password, JoinDate)
+Threads(Thread_ID, User_ID, Title, Creation_Date, Category_ID)
+Posts( Post_ID, Thread_ID, UserI_D, Content, PostDate)
+Comments( Comment_ID, Post_ID, User_ID, Content, Comment_Date)
+Categories( Category_ID, Category_Name)
+
+16. Tourism Management System.........
+Destinations( Destination_ID, Destination_Name, Country, Region)
+Tours(Tour_ID, TourName, Description, Price, Duration)
+Customers(Customer_ID, FirstName, LastName, Email, Phone)
+Bookings(Booking_ID, Customer_ID, Tour_ID, BookingDate, PaymentStatus)
+Payments(Payment_ID, Booking_ID, Payment_Amount, Payment_Date, Payment_Method)
+
+17. Job Portal Database....
+JobSeekers(Seeker_ID, Name, Email, Phone, ResumeLink)
+Employers(Employer_ID, Company_Name, Email, Phone, Location)
+Jobs(Job_ID, Employer_ID, Title, Location, Salary, JobDescription)
+Applications( Application_ID, Seeker_ID, Job_ID, ApplicationDate, Status)
+Interviews(Interview_ID, Application_ID, Interview_Date, Result)
+
+18. Subscription Service......
+Users( User_ID, Username, Email, JoinDate, Subscription_Status)
+Subscriptions(Subscription_ID, SubscriptionType, StartDate, EndDate, Price)
+Payments(Payment_ID, User_ID, Amount, Payment_Date, PaymentMethod)
+Plans(Plan_ID, Plan_Name, Price, Duration)
+Renewals( Renewal_ID, User_ID, Renewal_Date, NewSubscriptionEnd_Date)
+
+19. Shipping and Logistics Database.....
+Shipments( Shipment_ID, Sender_ID, Receiver_ID, ShippingDate, Status)
+Customers( Customer_ID, Name, Email, Phone, Address)
+Suppliers( Supplier_ID, Supplier_Name, Phone, Email)
+Tracking(Tracking_ID, Shipment_ID, Current_Location, EstimatedDeliveryDate)
+Routes( Route_ID, Route_Name, StartLocation, EndLocation, Distance)
+
+20. Payment Gateway System......
+Transactions(Transaction_ID, User_ID, Amount, TransactionDate, PaymentStatus)
+Users(User_ID, Username, Email, Phone, AccountStatus)
+PaymentMethods(PaymentMethod_ID, MethodName, Provider)
+Invoices(Invoice_ID, Transaction_ID, Amount, IssueDate, DueDate)
+Refunds(Refund_ID, Transaction_ID, Refund_Amount, Refund_Date, Status)
+
+21.hospital database......
+hospital(hospital staff,doctors,medicins,patient,appointment)
+staff(staff-id,name,salary,age,position)
+doctor(doctor-name,age,salary,experience,position)
+medicine(medicine id,name,prize,mfg date,expiry date)
+patient(patient name,patient id,patient room no.,payient bill,diesies)
+appointment(appointmrnt_number,time,fess,appointment name)
+
+22.creating company database........
+company(employee,product,client,office,department)
+employee(emp-id,emp-name-emp-salary,emp-position,emp-age)
+product(product-name,product-id,product-prize,mfg-date,mfg-time)
+client(client-name,client-id,client-address,no of employee)
+office(office-id,office-name,office-location,adress)
+department(dep-id,dep-name,no.of employee,dep-type,dep-location)
+
+23:creating bank database........
+bank(employee,branch,accounts,transaction,customer)
+employee(name,id,salary,position,experience)
+branch(name,id,location,no.of employee,no.of customer)
+accounts(acc-name,acc-id,acc-type,acc-date,acc-balance)
+transaction (transaction -id,name,date,time,value,number)
+customer(customer-name,id,age,gender,account -type)
+
+24:creating school database...........
+school (student,department,teachers,faculty)
+student(student-id,name,standard,marks,age)
+department(id,name,subject,no.of staff,no.of student)
+teachers(teacher-id,name,salary,position,age)
+faculty(name,id,no.of staff,no.of student)
+
+25:creating human research databse.........
+human research(employee,department,salary,experience)
+employee(name,id,experience,age,gender)
+department(dep-id,name,type,no.of employee)
+salary(salary value,salary acc-name,depertment)
+experince(typeof experience,pastcompany name,total experience)
+
+26:creating travel agency database.....
+travel agency(customer,trips,booking,buses)
+customer(name,id,payment,trip location)
+trips(name,type,location,prize)
+booking(booking id,name,payment type,location,total payment)
+bus(bus-number,name,no.of pasennger,driver name)
+
+27:creating university databse............
+university (student,courses,enrollment)
+student(student -id,name,age,course name,fees)
+course(course name,id,fees,duration,toal student)
+enrollment (id,name,total student,type,number of teacher)
+
+28:creating E-commers database....
+E-commers(costumer,product,orders)
+customer (id,name,product name,payment,adress)
+product (id,name,prize,total of products,monthly selling values)
+order(order name,id,location,payment,delivery)
+
+29: creating library database.....
+ library(books,loan,borrowes,author)
+book (name,prize,author,number of books)
+loan(id,loan date,due date,borrower id)
+borrower(id,name,email,mobile number)
+author(first name,last name,bokk name,id)
+
+30:creating donation management database
+donation management (donors,donation,campaign)
+donors(first name,last name,email id,mobile number,donation value)
+donation(type,name,date,time,value)
+compaign(name,location,total donation,total donors) 
+
+
+
+
+
